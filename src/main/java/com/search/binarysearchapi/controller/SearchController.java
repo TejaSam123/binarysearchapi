@@ -10,7 +10,7 @@ import com.search.binarysearchapi.model.Search;
 import com.search.binarysearchapi.service.SearchService;
 
 @RestController
-@RequestMapping(path = "/search")
+@RequestMapping(value = "/search")
 public class SearchController 
 {
     @Autowired
