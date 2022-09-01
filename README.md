@@ -10,3 +10,5 @@ curl --location --request POST 'http://localhost:8080/search/key' \
     "sortedArray": [5,6,7,8,9,10,1,2,3], //Sorted Rotated Array
     "key": 3  //Key to whose index we need to find
 }'
+
+Response for this is : 8
