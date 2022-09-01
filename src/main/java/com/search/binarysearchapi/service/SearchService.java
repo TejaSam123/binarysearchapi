@@ -1,11 +1,12 @@
-package com.search.binarysearchapi.dao;
+package com.search.binarysearchapi.service;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import com.search.binarysearchapi.model.Search;
 
-@Repository
-public class SearchDao {
+@Service
+public class SearchService {
 	 public int findKeyFromSortedRotatedArray(Search search) {
 		 	Integer[] reversedArray = search.getSortedArray();
 		 	int key = search.getKey();

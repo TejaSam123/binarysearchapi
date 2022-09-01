@@ -6,19 +6,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.search.binarysearchapi.dao.SearchDao;
 import com.search.binarysearchapi.model.Search;
+import com.search.binarysearchapi.service.SearchService;
 
 @RestController
 @RequestMapping(path = "/search")
 public class SearchController 
 {
     @Autowired
-    private SearchDao searchDao;
+    private SearchService searchService;
 
 	@PostMapping(path = "/key", consumes = "application/json", produces = "application/json")
 	public int searchKey(@RequestBody Search search) throws Exception {
-		int index = searchDao.findKeyFromSortedRotatedArray(search);
+		int index = searchService.findKeyFromSortedRotatedArray(search);
 		return index;
 	}
 }
