@@ -11,6 +11,7 @@ curl --location --request POST 'http://localhost:8080/accesstoken' \
     "username": username,
     "password": password
 }'
+
 Response for this call will be like this://This is expired token
 {
     "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNjYyMDg2MjczLCJpYXQiOjE2NjIwNjgyNzN9.H3LD8FlXqe1mTEQ3y4fKsc7LQUg1nzi4JTlOw0lZJQv87z8c7QX3M6tQRdcUQw0cWdsDjbN0vbno8T0M6LxWnQ"
