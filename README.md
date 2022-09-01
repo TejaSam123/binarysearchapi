@@ -4,6 +4,7 @@ This api provides index of the key element for a sorted rotated array.
 Here is the CURLs for this:
 
 Access Token CURL:
+
 curl --location --request POST 'http://localhost:8080/accesstoken' \
 --header 'Content-Type: application/json' \
 --data-raw '{
